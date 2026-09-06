@@ -1,0 +1,40 @@
+{
+  "name": "compare-anything",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "node --test tests/*.test.js",
+    "test:ui": "vitest run",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "diff": "^9.0.0",
+    "exceljs": "^4.4.0",
+    "fast-xml-parser": "^5.11.1",
+    "fflate": "^0.8.2",
+    "lucide-react": "^0.468.0",
+    "mammoth": "^1.9.0",
+    "papaparse": "^5.4.1",
+    "pdfjs-dist": "^4.10.38",
+    "postal-mime": "^2.4.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "yaml": "^2.7.0"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "^11.1.1"
+    }
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.9.6",
+    "vite": "^6.1.0",
+    "vitest": "^3.2.7"
+  }
+}
